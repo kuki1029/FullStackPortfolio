@@ -1,0 +1,87 @@
+/* About Me Section */
+.about-me {
+  padding: 50px 20px;
+  text-align: center;
+  background: #000; /* Light background color */
+}
+
+.section-title {
+  font-size: 32px;
+  color: rgb(210, 216, 236);
+  margin-bottom: 30px;
+  font-family: sans-serif;
+}
+
+/* Container for Image and Description */
+.about-me-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  gap: 40px; /* Space between image and text */
+  flex-wrap: wrap; /* Ensure it wraps for smaller screens */
+}
+
+/* Image Styling */
+.image-container {
+  position: relative;
+  width: 250px;
+  height: 250px;
+  overflow: hidden;
+  border-radius: 50%; /* Circular image */
+  flex-shrink: 0; /* Prevent shrinking on smaller screens */
+  margin-bottom: 20px; /* Add spacing when stacked on mobile */
+}
+
+.image-container img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: all 0.5s ease;
+  filter: blur(2px); /* Optional blur effect */
+}
+
+.image-container::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.1));
+  mix-blend-mode: overlay;
+  pointer-events: none;
+  transition: all 0.5s ease;
+}
+
+.image-container:hover img {
+  filter: blur(0); /* Clear blur on hover */
+}
+
+.image-container:hover::after {
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0));
+}
+
+/* Description Styling */
+.description {
+  max-width: 500px;
+  color: rgb(210, 216, 236);
+  font-size: 18px;
+  font-family: sans-serif;
+  line-height: 1.6;
+  text-align: left;
+}
+
+/* Mobile Optimization */
+@media (max-width: 768px) {
+  .about-me-container {
+    flex-direction: column; /* Stack the image and text vertically */
+    text-align: center; /* Center-align for smaller screens */
+  }
+
+  .description {
+    text-align: center; /* Center-align text on mobile */
+  }
+}
