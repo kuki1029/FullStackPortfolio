@@ -1,7 +1,6 @@
 const canvas = document.querySelector('#canvas');
 const ctx = canvas.getContext('2d');
 
-// TODO: Add responsive density of stars based on zoom
 const stars = [];
 const starCount = 5000;
 const starSize = 2;
