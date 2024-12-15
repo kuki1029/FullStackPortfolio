@@ -6,10 +6,10 @@
 }
 
 .section-title {
-  font-size: 32px;
-  color: rgb(210, 216, 236);
+  font-size: 28px;
+  color: rgb(222, 224, 232);
   margin-bottom: 30px;
-  font-family: sans-serif;
+  font-family: "Century Gothic", CenturyGothic, Geneva, AppleGothic, sans-serif;
 }
 
 /* Container for Image and Description */
@@ -67,9 +67,9 @@
 /* Description Styling */
 .description {
   max-width: 500px;
-  color: rgb(210, 216, 236);
-  font-size: 18px;
-  font-family: sans-serif;
+  color: rgb(179, 185, 207);
+  font-size: 12px;
+  font-family: "Century Gothic", CenturyGothic, Geneva, AppleGothic, sans-serif;
   line-height: 1.6;
   text-align: left;
 }

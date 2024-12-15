@@ -12,6 +12,12 @@ body {
   position: relative;
 }
 
+#canvas {
+  height: 100vh; /* Viewport height */
+  width: 100%; /* Full width */
+  overflow: hidden; /* Prevent scrolling within the canvas */
+}
+
 .homepage-text {
   color: #bcf;
   font-size: 4vmin;
@@ -29,7 +35,6 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
-  padding: 2%;
   background-image: rgba(0, 0, 0, 0);
   width: 100vw;
   position: absolute;
@@ -42,31 +47,32 @@ body {
   display: flex;
   flex-direction: column;
   align-items: flex-end;
-  margin-right: 5%;
+  margin-right: 2%;
+  margin-top: 1%;
 }
 
-/* Text Only Button */
-.text-button {
-  background: none;
+.menu-button {
   align-items: right;
   border: none;
-  font-size: 0.6rem;
+  font-size: 0.8rem;
   color: rgb(218, 222, 234);
   font-family: Sans-Serif;
   cursor: pointer;
   padding: 2px;
   transition: color 0.3s ease, text-shadow 0.3s ease;
+  text-decoration: none; /* Looks like plain text */
 }
 
-.text-button:hover {
+.menu-button:hover {
   color: #a8a8a8;
   text-shadow: 0px 2px 8px rgba(0, 0, 0, 0.2); /* Subtle glowing effect */
 }
 
-.text-button:focus {
-  outline: none; /* Remove focus outline for cleaner look */
-}
-
 .logo img {
   height: 40px;
+  margin: 20%;
+}
+
+.logo:hover {
+  transform: scale(1.1); /* Slight zoom on hover */
 }

@@ -3,16 +3,17 @@ const ctx = canvas.getContext('2d');
 
 // TODO: Add responsive density of stars based on zoom
 const stars = [];
-const starCount = 3000;
+const starCount = 5000;
 const starSize = 2;
 const attractorSize = 300;
-const scrollSpeed = 0.2;
+const scrollSpeed = 0.3;
 const pointer = { x: 0, y: 0 };
 const backgroundColor = '#000000';
 
 let width, height, widthModulo, heightModulo;
 
 var grad;
+var gradBlur;
 
 // Resize the canvas and update related properties
 function resizeCanvas() {
@@ -23,6 +24,10 @@ function resizeCanvas() {
 
     pointer.x = width / 2;
     pointer.y = height / 2;
+
+    gradBlur = ctx.createLinearGradient(0, height, 0, height - 200);
+    gradBlur.addColorStop(0, "rgb(0, 0, 0)");
+    gradBlur.addColorStop(0.9, "rgba(0, 0, 0,0)");
 
     grad = ctx.createLinearGradient(0, 0, 0, height);
     grad.addColorStop(0, "#002");
@@ -56,7 +61,7 @@ function animate(timer) {
     // Update direction
     // const dir = Math.sin(timer / 5000);
     // const dx = Math.cos(dir) * scrollSpeed;
-    const dy = -0.2; // I like the upwards movement
+    const dy = -scrollSpeed; // I like the upwards movement
 
     // Clear the canvas
     ctx.fillStyle = grad;
@@ -93,6 +98,11 @@ function animate(timer) {
     }
 
     ctx.globalCompositeOperation = 'source-over';
+
+    // Add bottom blur to create effect of stars appearing
+    ctx.fillStyle = gradBlur;
+    ctx.fillRect(0, 0, width, height);
+
     requestAnimationFrame(animate);
 }
 
