@@ -2,7 +2,7 @@
 .about-me {
   padding: 50px 20px;
   text-align: center;
-  background: #000; /* Light background color */
+  background: #00000000;
 }
 
 .section-title {
@@ -22,6 +22,12 @@
   margin: 0 auto;
   gap: 40px; /* Space between image and text */
   flex-wrap: wrap; /* Ensure it wraps for smaller screens */
+  /* background-image: radial-gradient(
+    circle 50rem at 105% 105%,
+    #000 35%,
+    #733000 45%,
+    #000 75%
+  ); */
 }
 
 /* Image Styling */
@@ -84,4 +90,17 @@
   .description {
     text-align: center; /* Center-align text on mobile */
   }
+}
+
+/* TODO: Move this */
+.container {
+  background-image: radial-gradient(
+    circle 50rem at 110% 60%,
+    #000 35%,
+    #733000 45%,
+    #000 75%
+  );
+  background-size: cover;
+
+  background-repeat: no-repeat;
 }
