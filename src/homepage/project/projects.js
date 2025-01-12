@@ -4,13 +4,13 @@ const cardsData = [
         title: "Chatique",
         image: "chatique.jpg",
         description: "A simple yet functional chatting app with a unique design.",
-        link: "chat.imkunal.ca"
+        link: "http://localhost:5173/chatique/"
     },
     {
         title: "Quantum Exhibit",
         image: "quantumExhibit.png",
         description: "Fusing physics and web development to craft elegant physics simulations.",
-        link: "physics.imkunal.ca"
+        link: "physics/"
     }
 ];
 
@@ -23,7 +23,7 @@ const createCards = (data) => {
         cardElement.classList.add("card");
 
         cardElement.innerHTML = `
-        <a href="${card.link}" class="card-link" target="_blank">
+        <a href="${card.link}" class="card-link">
                 <img src="${card.image}" alt="${card.title}">
             <div class="card-content">
                 <h3>${card.title}</h3>
