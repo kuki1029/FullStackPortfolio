@@ -3,8 +3,14 @@ const cardsData = [
     {
         title: "Chatique",
         image: "chatique.jpg",
-        description: "An unique approach to a modular chatting app",
-        link: "#"
+        description: "A simple yet functional chatting app with a unique design.",
+        link: "chat.imkunal.ca"
+    },
+    {
+        title: "Quantum Exhibit",
+        image: "quantumExhibit.png",
+        description: "Fusing physics and web development to craft elegant physics simulations.",
+        link: "physics.imkunal.ca"
     }
 ];
 

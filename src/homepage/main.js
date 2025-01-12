@@ -1,15 +1,14 @@
-import './style.css'
-import './about.css'
-import './projects.css'
-import './contact.css'
+import './about/about.css'
+import './project/projects.css'
+import './contact/contact.css'
 import './main.css'
 
 
 import mainHTML from "./main.html";
-import headerHTML from "./header.html";
-import aboutHTML from "./about.html";
-import projectsHTML from "./projects.html";
-import contactHTML from "./contact.html";
+import headerHTML from "./header/header.html";
+import aboutHTML from "./about/about.html";
+import projectsHTML from "./project/projects.html";
+import contactHTML from "./contact/contact.html";
 
 
 // Insert the main pages into app

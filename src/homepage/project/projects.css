@@ -26,7 +26,6 @@
   transition: transform 0.3s ease, background-color 0.3s ease;
 }
 
-/* Hover effect */
 .card:hover {
   transform: translateY(-10px);
   background-color: #2a2a2a;
@@ -35,7 +34,7 @@
 /* Card image */
 .card img {
   width: 100%;
-  height: auto;
+  height: 150px;
   object-fit: cover;
 }
 

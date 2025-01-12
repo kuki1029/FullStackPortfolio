@@ -15,12 +15,12 @@
 .email {
   font-size: 16px;
   color: #fff;
-  text-decoration: none; /* Looks like plain text */
+  text-decoration: none;
   transition: color 0.3s ease;
 }
 
 .email:hover {
-  color: #9b9b9b; /* Subtle hover effect */
+  color: #9b9b9b;
 }
 
 .social-icons {
@@ -38,12 +38,12 @@
   width: 100%;
   height: 100%;
   object-fit: cover;
-  filter: brightness(0) invert(1); /* Default: Monochrome icons */
+  filter: brightness(0) invert(1);
   transition: filter 0.3s ease, transform 0.3s ease;
 }
 
 .icon:hover {
-  transform: scale(1.1); /* Slight zoom on hover */
+  transform: scale(1.1);
 }
 
 /* Mobile Styling */
