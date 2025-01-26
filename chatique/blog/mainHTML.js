@@ -1,3 +1,5 @@
+const mainHTML =
+    `
 <!DOCTYPE html>
 <html lang="en">
 
@@ -16,7 +18,7 @@
 
         <h1>An Intro To Chatique</h1>
         <div class="date">January 12, 2025</div>
-        <a href="https://chat.imkunal.ca" target="_blank"><img src="/chatique.png" alt=" Blog Post Image"></a>
+        <a href="https://chat.imkunal.ca" target="_blank"><img src="../chatique.png" alt=" Blog Post Image"></a>
         <div class="content">
             <div class="button-container">
                 <a href="https://chat.imkunal.ca" target="_blank" class="buttonBlog">Visit the App</a>
@@ -117,3 +119,6 @@
 </body>
 
 </html>
+`
+
+export default mainHTML

@@ -2,8 +2,8 @@ import './main.css'
 import '../header/header.css'
 
 
-import mainHTML from "./main.html";
-import headerHTML from '../header/header.html'
+import mainHTML from "./mainHTML.js";
+import headerHTML from '../header/headerHTML.js'
 
 // Insert the main pages into app
 const app = document.querySelector("#app")

@@ -1,7 +1,7 @@
 // import html from '@rollup/plugin-html'
 import { defineConfig } from 'vite'
-import { string } from "rollup-plugin-string";
-
+import { dirname, resolve } from 'node:path'
+import { fileURLToPath } from 'node:url'
 
 // Does not minify the html but not too relevant for this site
 const htmlImport = {
@@ -21,8 +21,18 @@ const htmlImport = {
   }
 }
 
+const __dirname = dirname(fileURLToPath(import.meta.url))
+
 export default defineConfig({
-
-
-
+  root: './',
+  publicDir: 'public',
+  build: {
+    rollupOptions: {
+      input: {
+        main: resolve(__dirname, 'index.html'),
+        physics: resolve(__dirname, 'physics/index.html'),
+        chatique: resolve(__dirname, 'chatique/index.html'),
+      },
+    },
+  },
 })
