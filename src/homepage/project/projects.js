@@ -2,9 +2,9 @@
 const cardsData = [
     {
         title: "Chatique",
-        image: "chatique.jpg",
+        image: "chatique.png",
         description: "A simple yet functional chatting app with a unique design.",
-        link: "http://localhost:5173/chatique/"
+        link: "chatique/"
     },
     {
         title: "Quantum Exhibit",
