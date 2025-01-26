@@ -1,3 +1,8 @@
+// import html from '@rollup/plugin-html'
+import { defineConfig } from 'vite'
+import { string } from "rollup-plugin-string";
+
+
 // Does not minify the html but not too relevant for this site
 const htmlImport = {
   name: "htmlImport",
@@ -16,6 +21,8 @@ const htmlImport = {
   }
 }
 
-export default {
-  plugins: [htmlImport]
-}
+export default defineConfig({
+
+
+
+})
