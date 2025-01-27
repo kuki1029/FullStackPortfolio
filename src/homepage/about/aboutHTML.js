@@ -3,7 +3,7 @@ const aboutHTML = `
     <h2 class='section-title'>About Me</h2>
     <div class='about-me-container'>
         <div class='image-container'>
-            <img src='../../../public/me.jpg' alt='Your Picture' />
+            <img src='me.jpg' alt='Your Picture' />
         </div>
         <div class='description'>
             <p>
