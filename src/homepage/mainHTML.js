@@ -9,15 +9,14 @@ const mainHTML = `<div id='mainPage'>
             A&nbsp;&nbsp;&nbsp;&nbsp;
             L&nbsp;&nbsp;&nbsp;&nbsp;
             <br>
-            C&nbsp;&nbsp;&nbsp;&nbsp;
-            U&nbsp;&nbsp;&nbsp;&nbsp;
+            V&nbsp;&nbsp;&nbsp;&nbsp;
+            A&nbsp;&nbsp;&nbsp;&nbsp;
             R&nbsp;&nbsp;&nbsp;&nbsp;
-            I&nbsp;&nbsp;&nbsp;&nbsp;
-            O&nbsp;&nbsp;&nbsp;&nbsp;
-            S&nbsp;&nbsp;&nbsp;&nbsp;
-            I&nbsp;&nbsp;&nbsp;&nbsp;
-            T&nbsp;&nbsp;&nbsp;&nbsp;
-            Y&nbsp;&nbsp;&nbsp;&nbsp;
+            K&nbsp;&nbsp;&nbsp;&nbsp;
+            E&nbsp;&nbsp;&nbsp;&nbsp;
+            K&nbsp;&nbsp;&nbsp;&nbsp;
+            A&nbsp;&nbsp;&nbsp;&nbsp;
+            R&nbsp;&nbsp;&nbsp;&nbsp;
         </span>
     </div>
 
