@@ -3,6 +3,9 @@ import { Dialog, DialogPanel } from '@headlessui/react'
 import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline'
 import { ShaderGradientCanvas, ShaderGradient } from '@shadergradient/react'
 import kunalHomePageImg from '../assets/kunalHomePage.jpg'
+import kunalTest from '../assets/kunalTest.jpg'
+import { motion } from 'motion/react'
+import type { Variants } from 'motion/react'
 
 const navigation = [
   { name: 'Work', href: '#' },
@@ -17,10 +20,11 @@ function App() {
     <>
       {' '}
       <ShaderGradientCanvas
+        pointerEvents="none"
         style={{
           position: 'absolute',
           top: 0,
-          height: '200vh'
+          height: '250vh'
         }}
       >
         <ShaderGradient
@@ -121,38 +125,79 @@ function App() {
           </Dialog>
         </header>
         {/* Actual Content */}
+
         <div className="relative isolate px-6 pt-14 lg:px-8">
-          <div className="mx-auto max-w-2xl py-32 sm:py-48 lg:py-20">
-            <div className="hidden sm:mb-8 sm:flex sm:justify-center">
-              <div className="relative rounded-full px-3 py-1 text-sm/6 text-neutral-50 ring-1 ring-neutral-50/30">
-                Currently accepting new clients.{' '}
-                <a
-                  href="#"
-                  className="font-semibold text-indigo-600 hover:text-white"
-                >
-                  <span aria-hidden="true" className="absolute inset-0" />
-                  Hire me <span aria-hidden="true">&rarr;</span>
-                </a>
+          <div className="mx-auto h-screen max-w-2xl py-32 md:py-20">
+            <div className="flex h-full place-content-center items-center">
+              <div className="absolute top-[calc(50%-6rem)] mb-8 flex justify-center">
+                <div className="rounded-full px-3 py-1 text-sm/6 text-neutral-50 ring-1 ring-neutral-50/30">
+                  Currently accepting new clients.{' '}
+                  <a
+                    href="#"
+                    className="font-semibold text-indigo-600 hover:text-white"
+                  >
+                    <span aria-hidden="true" className="inset-0" />
+                    Hire me <span aria-hidden="true">&rarr;</span>
+                  </a>
+                </div>
               </div>
-            </div>
-            <div className="flex flex-col items-center justify-center text-center">
-              <h1 className="text-balance text-5xl font-semibold tracking-tight text-neutral-50 sm:text-7xl">
-                Extraordinary design made easy
+              <h1 className="text-balance text-center text-5xl font-semibold tracking-tight text-neutral-50 sm:text-7xl">
+                Extraordinary <br /> design made easy
               </h1>
-              <div className="mt-12 h-60 w-1/2 overflow-hidden rounded-[15%] bg-blend-multiply shadow-2xl transition delay-150 duration-300 ease-in-out hover:-translate-y-1 hover:scale-110 lg:h-96">
-                <img className="opacity-100" alt="" src={kunalHomePageImg} />
-              </div>
-              <p className="mt-8 text-pretty text-lg font-medium text-[#f2e9e2] sm:text-xl/8">
-                I&apos;m a developer, designer and a physicist who understands
-                how to bring your idea to life. I have experience helping local
-                brands grow to designing complex web apps for the military.
-              </p>
             </div>
+            <div
+              className="mx-auto mt-[-15%] h-96 w-1/2 overflow-hidden shadow-2xl lg:h-96"
+              style={{
+                clipPath: `url(#squircleClip)`
+              }}
+            >
+              <img alt="" src={kunalHomePageImg} />
+            </div>
+            <p className="mt-8 text-pretty text-center text-lg font-medium text-[#f2e9e2] sm:text-xl/8">
+              I&apos;m a developer, designer and a physicist who understands how
+              to bring your idea to life. I have experience helping local brands
+              grow to designing complex web apps for the military.
+            </p>
           </div>
         </div>
+        <div className="relative flex place-content-center items-center ">
+          <motion.div
+            initial="offscreen"
+            whileInView="onscreen"
+            variants={cardVariants}
+            className="h-[55vh] w-[150vw] overflow-x-hidden rounded-t-full bg-gradient-to-b from-[#802cf5] via-[#c192f7] to-[#ffffff]"
+          ></motion.div>
+        </div>
+        <div className="absolute top-[216vh] h-screen w-full bg-[#ffffff]"></div>
+
+        {/* Rounding needed for above image */}
+        <section>
+          <svg width="10" height="10" viewBox="0 0 10 10">
+            <clipPath id="squircleClip" clipPathUnits="objectBoundingBox">
+              <path
+                fill="red"
+                stroke="none"
+                d="M 0,0.5 C 0,0 0,0 0.5,0 S 1,0 1,0.5 1,1 0.5,1 0,1 0,0.5"
+              />
+            </clipPath>
+          </svg>
+        </section>
       </div>
     </>
   )
+}
+const cardVariants: Variants = {
+  offscreen: {
+    y: '150%'
+  },
+  onscreen: {
+    y: '100%',
+    transition: {
+      type: 'spring',
+      bounce: 0.4,
+      duration: 0.8
+    }
+  }
 }
 
 export default App
