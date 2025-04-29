@@ -160,15 +160,17 @@ function App() {
             </p>
           </div>
         </div>
-        <div className="relative flex place-content-center items-center ">
+        {/* <div className="relative flex place-content-center items-center ">
           <motion.div
             initial="offscreen"
             whileInView="onscreen"
             variants={cardVariants}
             className="h-[55vh] w-[150vw] overflow-x-hidden rounded-t-full bg-gradient-to-b from-[#802cf5] via-[#c192f7] to-[#ffffff]"
           ></motion.div>
+        </div> */}
+        <div className="absolute top-[216vh] grid min-h-screen w-full items-center justify-center overflow-hidden">
+          <div className=" mx-auto h-screen w-[110vw] rounded-t-[400px] bg-[#ff0000]"></div>
         </div>
-        <div className="absolute top-[216vh] h-screen w-full bg-[#ffffff]"></div>
 
         {/* Rounding needed for above image */}
         <section>
