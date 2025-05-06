@@ -1,8 +1,21 @@
+import { createBrowserRouter, RouterProvider } from 'react-router'
 import { createRoot } from 'react-dom/client'
 import 'tailwindcss/tailwind.css'
-import App from 'components/App'
+import FreelancePage from 'components/FreelancePage'
+import { DevPage } from 'components/DevPage'
 
 const container = document.getElementById('root') as HTMLDivElement
 const root = createRoot(container)
 
-root.render(<App />)
+const router = createBrowserRouter([
+  {
+    path: '/',
+    element: <FreelancePage />
+  },
+  {
+    path: '/dev',
+    element: <DevPage />
+  }
+])
+
+root.render(<RouterProvider router={router} />)

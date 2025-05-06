@@ -4,7 +4,7 @@ import { MainScreen } from './homepageFreelance/MainScreen'
 import { AnimatedPopUp } from './homepageFreelance/AnimatedPopUp'
 import { FooterFreelance } from './homepageFreelance/FooterFreelance'
 
-function App() {
+function FreelancePage() {
   return (
     <>
       <BackgroundShader />
@@ -19,4 +19,4 @@ function App() {
   )
 }
 
-export default App
+export default FreelancePage
