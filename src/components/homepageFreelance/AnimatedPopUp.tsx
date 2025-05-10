@@ -3,13 +3,14 @@
 import { motion } from 'motion/react'
 import type { Variants } from 'motion/react'
 import { ProjectCards } from './ProjectCards'
+import { FooterFreelance } from './FooterFreelance'
 
 const cardVariants: Variants = {
   offscreen: {
-    y: '100vh'
+    y: '120vh'
   },
   onscreen: {
-    y: '80vh',
+    y: '100vh',
     transition: {
       type: 'spring',
       bounce: 0.4,
@@ -20,22 +21,24 @@ const cardVariants: Variants = {
 
 export const AnimatedPopUp = () => {
   return (
-    <div className="absolute grid min-h-screen w-full items-center justify-center overflow-hidden">
+    <div className="absolute h-auto grid min-h-screen w-full items-center justify-center overflow-hidden">
       <motion.div
         initial="offscreen"
         whileInView="onscreen"
         variants={cardVariants}
-        className=" mx-auto h-[300vh] w-[110vw] rounded-t-[150px] bg-gradient-to-b from-[#BB73EB] from-0% via-[#FFAF75] via-25% to-[#ffffff] to-50% sm:rounded-t-[400px] "
+        className=" mx-auto h-auto w-[110vw] rounded-t-[150px] bg-gradient-to-b from-[#BB73EB] from-0% via-[#FFAF75] via-25% to-[#ffffff] to-50% sm:rounded-t-[400px] "
       >
         {/* Title on floaty card */}
         <div className="flex h-96 place-content-center items-center">
-          <h1 className="w-3/4 text-balance text-center text-5xl font-semibold tracking-tight text-[#f2e9e2] sm:text-7xl">
-            One webpage at a time, making your dream into reality
+          <h1 className="w-3/4 text-balance text-center text-5xl font-light tracking-tight text-[#f2e9e2] sm:text-7xl">
+            Turning business ideas into successful startups
           </h1>
         </div>
         <ProjectCards />
+
         {/* Projects */}
       </motion.div>
+      <FooterFreelance />
     </div>
   )
 }

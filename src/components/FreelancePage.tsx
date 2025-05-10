@@ -2,7 +2,6 @@ import { BackgroundShader } from './backgroundShader'
 import { Header } from './header/Header'
 import { MainScreen } from './homepageFreelance/MainScreen'
 import { AnimatedPopUp } from './homepageFreelance/AnimatedPopUp'
-import { FooterFreelance } from './homepageFreelance/FooterFreelance'
 
 function FreelancePage() {
   return (
@@ -13,7 +12,6 @@ function FreelancePage() {
         {/* Actual Content */}
         <MainScreen />
         <AnimatedPopUp />
-        <FooterFreelance />
       </div>
     </>
   )

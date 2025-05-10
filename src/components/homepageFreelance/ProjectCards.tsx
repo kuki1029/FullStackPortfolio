@@ -8,13 +8,13 @@ const projects = [
     image: teaClub
   },
   {
-    name: 'Tea Society',
+    name: 'Tea Society1',
     description:
       'Designed an unique and eye catching website to help the local Tea Society gain members and almost quadruple in size over a few months.',
     image: teaClub
   },
   {
-    name: 'Tea Society',
+    name: 'Tea Society2',
     description:
       'Designed an unique and eye catching website to help the local Tea Society gain members and almost quadruple in size over a few months.',
     image: teaClub
@@ -25,7 +25,7 @@ export const ProjectCards = () => {
   return (
     <div className="mt-48 flex w-full place-content-center items-center">
       {/* Project Cards */}
-      <div className="mt-8 grid w-screen gap-4 px-8 sm:grid-cols-1 lg:grid-cols-2 xl:grid-cols-3">
+      <div className="mt-8 grid w-screen gap-4 px-8 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-3">
         {projects.map((project) => (
           <div
             key={project.name}

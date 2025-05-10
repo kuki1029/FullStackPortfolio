@@ -1,6 +1,6 @@
 export const FooterFreelance = () => {
   return (
-    <div className="absolute top-[400vh] grid h-screen min-h-screen w-full items-center justify-center overflow-hidden bg-gradient-to-b from-transparent to-black to-50%">
+    <div className="grid relative mt-[48rem] h-screen w-full items-center justify-center overflow-hidden bg-gradient-to-b from-transparent to-black to-50%">
       <div className="mt-32 flex w-screen flex-col px-16">
         <a
           href="http://www.google.com"
@@ -15,7 +15,7 @@ export const FooterFreelance = () => {
             Let&apos;s talk
           </button>
         </a>
-        <div className="mt-32 grid w-full justify-stretch px-16 sm:grid-flow-col">
+        <div className="mt-32 grid w-full justify-items-start  sm:grid-flow-col">
           <p className="text-balance text-left text-5xl font-semibold tracking-tight text-[#f2e9e2] sm:text-[10rem]">
             Kunal
           </p>
