@@ -30,7 +30,10 @@ export const AnimatedPopUp = () => {
       >
         {/* Title on floaty card */}
         <div className="flex h-96 place-content-center items-center">
-          <h1 className="w-3/4 text-balance text-center text-5xl font-light tracking-tight text-[#f2e9e2] sm:text-7xl">
+          <h1
+            id="work"
+            className="w-3/4 text-balance text-center text-5xl font-light tracking-tight text-[#f2e9e2] sm:text-7xl"
+          >
             Turning business ideas into successful startups
           </h1>
         </div>

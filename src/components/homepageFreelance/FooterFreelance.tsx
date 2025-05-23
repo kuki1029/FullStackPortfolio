@@ -1,6 +1,6 @@
 export const FooterFreelance = () => {
   return (
-    <div className="grid relative mt-[48rem] h-screen w-full items-center justify-center overflow-hidden bg-gradient-to-b from-transparent to-black to-50%">
+    <div className="grid relative mt-[48rem] h-auto pb-10 w-full items-center justify-center overflow-hidden bg-gradient-to-b from-transparent to-black to-50%">
       <div className="mt-32 flex w-screen flex-col px-16">
         <a
           href="http://www.google.com"
@@ -16,9 +16,20 @@ export const FooterFreelance = () => {
           </button>
         </a>
         <div className="mt-32 grid w-full justify-items-start  sm:grid-flow-col">
-          <p className="text-balance text-left text-5xl font-semibold tracking-tight text-[#f2e9e2] sm:text-[10rem]">
-            Kunal
-          </p>
+          <div>
+            <p className="text-balance text-left text-5xl font-semibold tracking-tight text-[#f2e9e2] sm:text-[10rem]">
+              Kunal
+            </p>
+            <p
+              id="about"
+              className="text-balance text-left sm:ml-3 font-semibold tracking-tight opacity-70 text-[#f2e9e2] sm:text-md"
+            >
+              Kunal is graduate from the University Of Waterloo. He brings a
+              unique skill set with his degree in AstroPhysics but work
+              experience in web development. He loves to travel and explore food
+              culture around the world!
+            </p>
+          </div>
           <div className="flex flex-col font-semibold text-[#f2e9e2]">
             <a
               href="http://www.google.com"

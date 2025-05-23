@@ -8,8 +8,10 @@ export const MainScreen = () => {
         <div className="group absolute top-[calc(50%-8rem)] mb-8 flex flex-row justify-center">
           <div className="rounded-full px-3 py-1 text-xs/6 text-neutral-50 ring-1 ring-neutral-50/30 ">
             <a href="#">
-              <p className="inline size-6">Currently accepting new clients.</p>
-              <ArrowRightIcon className="inline size-6 group-hover:text-[#DDA0DD]" />
+              <p className="inline size-6">
+                Currently accepting new clients &nbsp;
+              </p>
+              <ArrowRightIcon className="inline size-8 group-hover:text-[#DDA0DD]" />
             </a>
           </div>
         </div>

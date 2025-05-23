@@ -3,9 +3,9 @@ import { DesktopHeader } from './DesktopHeader'
 import { MobileHeader } from './MobileHeader'
 
 const navigation = [
-  { name: 'Work', href: '#' },
-  { name: 'About', href: '#' },
-  { name: "Let's Chat", href: '#' }
+  { name: 'Work', href: '#work' },
+  { name: 'About', href: '#about' },
+  { name: "Let's Chat", href: 'mailto:pvarkeka@uwaterloo.ca' }
 ]
 
 export const Header = () => {

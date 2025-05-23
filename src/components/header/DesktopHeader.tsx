@@ -26,12 +26,13 @@ export const DesktopHeader = ({ setMobileMenuOpen, navigation }: Iprops) => {
         </button>
       </div>
       {/* Menu options. Only on lg */}
+      {/*TODO*/}
       <div className="hidden lg:flex lg:gap-x-12">
         {navigation.map((item) => (
           <a
             key={item.name}
             href={item.href}
-            className="text-2xl text-sm/6 font-bold text-[#f2e9e2] opacity-70"
+            className="text-2xl text-sm/6 font-bold text-[#f2e9e2] hover:opacity-70"
           >
             {/* TODO: Make color variable. Add hover */}
             {item.name}

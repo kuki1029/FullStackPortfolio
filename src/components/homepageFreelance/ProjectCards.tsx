@@ -23,7 +23,7 @@ const projects = [
 
 export const ProjectCards = () => {
   return (
-    <div className="mt-48 flex w-full place-content-center items-center">
+    <div className="mt-48 pb-32 flex w-full place-content-center items-center">
       {/* Project Cards */}
       <div className="mt-8 grid w-screen gap-4 px-8 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-3">
         {projects.map((project) => (
