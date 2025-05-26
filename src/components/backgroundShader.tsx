@@ -27,7 +27,7 @@ export const BackgroundShader = () => {
       style={{
         position: 'absolute',
         top: 0,
-        height: '400vh'
+        height: '300vh'
       }}
     >
       <ShaderGradient control="query" urlString={url} />

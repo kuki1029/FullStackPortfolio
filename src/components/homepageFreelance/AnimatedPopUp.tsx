@@ -21,7 +21,7 @@ const cardVariants: Variants = {
 
 export const AnimatedPopUp = () => {
   return (
-    <div className="absolute h-auto grid min-h-screen w-full items-center justify-center overflow-hidden">
+    <div className="absolute grid h-auto min-h-screen w-full items-center justify-center overflow-hidden">
       <motion.div
         initial="offscreen"
         whileInView="onscreen"
@@ -34,7 +34,7 @@ export const AnimatedPopUp = () => {
             id="work"
             className="w-3/4 text-balance text-center text-5xl font-light tracking-tight text-[#f2e9e2] sm:text-7xl"
           >
-            Turning business ideas into successful startups
+            Turning visions into successful startups
           </h1>
         </div>
         <ProjectCards />

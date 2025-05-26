@@ -7,7 +7,7 @@ export const MainScreen = () => {
       <div className="relative flex h-full place-content-center items-center">
         <div className="group absolute top-[calc(50%-8rem)] mb-8 flex flex-row justify-center">
           <div className="rounded-full px-3 py-1 text-xs/6 text-neutral-50 ring-1 ring-neutral-50/30 ">
-            <a href="#">
+            <a href="mailto:pvarkeka@uwaterloo.ca">
               <p className="inline size-6">
                 Currently accepting new clients &nbsp;
               </p>
