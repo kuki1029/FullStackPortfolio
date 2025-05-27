@@ -1,3 +1,9 @@
+import { MainScreenDev } from './homepageDev/MainScreenDev'
+
 export const DevPage = () => {
-  return <div>Hello Dev</div>
+  return (
+    <div className="h-screen w-screen bg-[#171717]">
+      <MainScreenDev />
+    </div>
+  )
 }
