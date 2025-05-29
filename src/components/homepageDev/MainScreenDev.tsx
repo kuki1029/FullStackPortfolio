@@ -1,3 +1,5 @@
+import { ExperienceDev } from './ExperienceDev'
+
 export const MainScreenDev = () => {
   return (
     <div className="container mx-auto bg-inherit pt-8">
@@ -15,31 +17,16 @@ export const MainScreenDev = () => {
         </div>
       </div>
       <div id="about" className="pt-24">
-        <p className="font-geistmono font-bold text-[#D0D0D0] opacity-70">
-          about me
+        <p className="font-geistmono  text-[#D0D0D0] opacity-70">
+          a self taught full stack developer with a background in quantum
+          physics. I specialize in unique solutions to unique problems. My
+          speciality is my ability to work with no guidance or supervision but
+          still produce excellent and timely results.
         </p>
       </div>
       <div id="experience" className="pt-24">
-        <p className="font-geistmono text-white">Experience</p>
-        <div className="flex flex-col gap-2 sm:flex-row sm:gap-4 py-4 text-[0.85rem]">
-          <p className="opacity-80 min-w-fit">July, 2021 - Present</p>
-          <div>
-            <p className="font-medium">
-              {' '}
-              <a
-                target="_blank"
-                className=" underline underline-offset-4 hover:font-bold "
-                href=""
-              >
-                123
-              </a>{' '}
-              Example
-            </p>
-            <p>
-              Test
-            </p>
-          </div>
-        </div>
+        <p className="font-geistmono text-white pb-8">Experience</p>
+        <ExperienceDev />
       </div>
     </div>
   )
