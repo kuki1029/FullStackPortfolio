@@ -1,4 +1,5 @@
 import { ExperienceDev } from './ExperienceDev'
+import { FlipText } from './FlipText'
 
 export const MainScreenDev = () => {
   return (
@@ -6,7 +7,7 @@ export const MainScreenDev = () => {
       <div className="flex justify-between" id="header">
         <div>
           <p className="font-geistmono text-2xl font-bold text-white">Kunal</p>
-          <p className="font-geistmono text-white opacity-50">role</p>
+          <FlipText />
         </div>
         <div className="flex flex-col font-geistmono text-white">
           <a className="opacity-50 hover:opacity-100" href="">
@@ -25,7 +26,7 @@ export const MainScreenDev = () => {
         </p>
       </div>
       <div id="experience" className="pt-24">
-        <p className="font-geistmono text-white pb-8">Experience</p>
+        <p className="pb-8 font-geistmono text-white">Experience</p>
         <ExperienceDev />
       </div>
     </div>
