@@ -1,5 +1,6 @@
 import { ExperienceDev } from './ExperienceDev'
 import { FlipText } from './FlipText'
+import { ProjectDev } from './ProjectDev'
 
 export const MainScreenDev = () => {
   return (
@@ -28,6 +29,10 @@ export const MainScreenDev = () => {
       <div id="experience" className="pt-24">
         <p className="pb-8 font-geistmono text-white">Experience</p>
         <ExperienceDev />
+      </div>
+      <div id="experience" className="py-24">
+        <p className="pb-8 font-geistmono text-white">Projects</p>
+        <ProjectDev />
       </div>
     </div>
   )
