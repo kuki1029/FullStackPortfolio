@@ -2,6 +2,21 @@ import { ExperienceDev } from './ExperienceDev'
 import { FlipText } from './FlipText'
 import { ProjectDev } from './ProjectDev'
 
+const navLinks = [
+  {
+    name: 'Github',
+    link: ''
+  },
+  {
+    name: 'Linkedin',
+    link: ''
+  },
+  {
+    name: 'Email',
+    link: ''
+  }
+]
+
 export const MainScreenDev = () => {
   return (
     <div className="container mx-auto bg-inherit pt-8">
@@ -11,15 +26,21 @@ export const MainScreenDev = () => {
           <FlipText />
         </div>
         <div className="flex flex-col font-geistmono text-white">
-          <a className="opacity-50 hover:opacity-100" href="">
-            Github
-          </a>
-          <a href="opacity-50 hover:opacity-100">Linkedin</a>
-          <a href="opacity-50 hover:opacity-100">Email</a>
+          {navLinks.map((nav) => (
+            <a
+              key={nav.name}
+              className="opacity-50 hover:opacity-100"
+              target="_blank"
+              rel="noopener noreferrer"
+              href={nav.link}
+            >
+              {nav.name}
+            </a>
+          ))}
         </div>
       </div>
       <div id="about" className="pt-24">
-        <p className="font-geistmono  text-[#D0D0D0] opacity-70">
+        <p className="w-3/4  font-geistmono text-[#D0D0D0] opacity-70">
           a self taught full stack developer with a background in quantum
           physics. I specialize in unique solutions to unique problems. My
           speciality is my ability to work with no guidance or supervision but
@@ -27,11 +48,11 @@ export const MainScreenDev = () => {
         </p>
       </div>
       <div id="experience" className="pt-24">
-        <p className="pb-8 font-geistmono text-white">Experience</p>
+        <p className="pb-8 font-hand text-4xl text-[#EA9A4F]">Experience</p>
         <ExperienceDev />
       </div>
       <div id="experience" className="py-24">
-        <p className="pb-8 font-geistmono text-white">Projects</p>
+        <p className="pb-8 font-hand   text-white">Projects</p>
         <ProjectDev />
       </div>
     </div>

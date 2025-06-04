@@ -47,7 +47,7 @@ export const ExperienceDev = () => {
       {experience.map((job, i) => (
         <div
           key={i}
-          className="group rounded mt-4 flex flex-col gap-2 p-4 delay-150 duration-700 hover:bg-[#2E2E2E]/50 sm:flex-row sm:gap-4"
+          className="group mt-4 flex flex-col gap-2 rounded p-4 hover:bg-[#2E2E2E]/50 sm:flex-row sm:gap-4"
         >
           <p className="min-w-40 whitespace-nowrap text-[#D0D0D0] opacity-80">
             {job.date}

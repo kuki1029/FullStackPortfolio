@@ -15,6 +15,17 @@ export default {
           'Liberation Mono',
           'Courier New',
           'monospace'
+        ],
+        hand: [
+          'Grape Nuts',
+          'ui-monospace',
+          'SFMono-Regular',
+          'Menlo',
+          'Monaco',
+          'Consolas',
+          'Liberation Mono',
+          'Courier New',
+          'monospace'
         ]
       }
     }
