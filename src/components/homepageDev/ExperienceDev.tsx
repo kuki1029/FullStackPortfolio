@@ -47,12 +47,12 @@ export const ExperienceDev = () => {
       {experience.map((job, i) => (
         <div
           key={i}
-          className="group mt-4 flex flex-col gap-2 rounded p-4 hover:bg-[#2E2E2E]/50 sm:flex-row sm:gap-4"
+          className="group  flex flex-col gap-2 rounded p-4 hover:bg-[#2E2E2E]/50 sm:flex-row sm:gap-4"
         >
-          <p className="min-w-40 whitespace-nowrap text-[#D0D0D0] opacity-80">
+          <p className="mr-8 min-w-40 whitespace-nowrap text-[#D0D0D0] opacity-80">
             {job.date}
           </p>
-          <div className="pl-8 text-white">
+          <div className="text-white">
             <p className="font-medium text-white">
               <a
                 target="_blank"
@@ -64,8 +64,9 @@ export const ExperienceDev = () => {
               </a>{' '}
               | {job.role}
             </p>
+            {/* JOB DESC */}
             <p className="font-extralight opacity-70">{job.desc}</p>
-            <ul className="mr-4 mt-1 flex w-full flex-wrap justify-end gap-2 pr-12 opacity-60 transition delay-150 duration-700 ease-in-out group-hover:opacity-100">
+            <ul className="mr-4 mt-1 flex w-full flex-wrap justify-end gap-2 pt-2 opacity-60 transition delay-150 duration-700 ease-in-out group-hover:opacity-100">
               {job.stacks.map((stack, i) => (
                 <li
                   key={i}
