@@ -9,7 +9,7 @@ const experience = [
   },
   {
     date: 'Jan, 2025 - May 2025',
-    role: 'Quantum Computer Undergraduate Researched',
+    role: 'Quantum Computer Undergraduate Researcher',
     company: 'Institute Of Quantum Computing',
     link: 'https://uwaterloo.ca/institute-for-quantum-computing/',
     stacks: ['python', 'deformable mirror', 'laser', 'thorlabs'],
@@ -54,18 +54,18 @@ export const ExperienceDev = () => {
           </p>
           <div className="text-white">
             <p className="font-medium text-white">
+              {job.role} |{' '}
               <a
                 target="_blank"
                 rel="noreferrer"
-                className="underline underline-offset-4 hover:font-bold "
+                className="opacity-70 text-xs underline underline-offset-4 hover:font-bold "
                 href={job.link}
               >
                 {job.company}
               </a>{' '}
-              | {job.role}
             </p>
             {/* JOB DESC */}
-            <p className="font-geistmono mt-2 text-sm font-extralight opacity-70 ">
+            <p className="mt-2 font-geistmono text-sm font-extralight opacity-70 ">
               {job.desc}
             </p>
             <ul className="mr-4 mt-1 flex w-full flex-wrap justify-end gap-2 pt-2 opacity-60 transition delay-150 duration-700 ease-in-out group-hover:opacity-100">

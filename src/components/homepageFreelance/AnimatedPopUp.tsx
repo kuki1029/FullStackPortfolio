@@ -34,7 +34,7 @@ export const AnimatedPopUp = () => {
             id="work"
             className="w-3/4 text-balance text-center text-5xl font-light tracking-tight text-[#f2e9e2] sm:text-7xl"
           >
-            Turning visions into successful startups
+            Turning dreams and ideas into successful startups
           </h1>
         </div>
         <ProjectCards />

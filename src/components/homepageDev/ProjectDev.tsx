@@ -58,7 +58,9 @@ export const ProjectDev = () => {
               </div>
               <ProjectButtons repo={project.repo} demo={project.demo} />
             </div>
-            <p className="mt-1 text-sm font-extralight opacity-70">{project.desc}</p>
+            <p className="mt-1 text-sm font-extralight opacity-70">
+              {project.desc}
+            </p>
           </article>
         ))}
       </div>
