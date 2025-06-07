@@ -2,8 +2,8 @@ const experience = [
   {
     date: 'May, 2025 - Present',
     role: 'React Developer',
-    company: 'Venuiti',
-    link: 'https://venuitihealth.com/',
+    company: 'T6 Health Systems',
+    link: 'https://t6.health/',
     stacks: ['react', 'typescript', 'jenkins', 'jira', 'vite', 'electron'],
     desc: 'Developed a new application by modifying and reusing exisitng in-house architecture and react codebase. Worked with the complex codebase and also talked to stakeholders to understand requirements. Created new Jenkins pipelines.  '
   },
@@ -42,8 +42,8 @@ const experience = [
 
 export const ExperienceDev = () => {
   return (
-    <>
-      {' '}
+    <div id="experience" className="pt-24">
+      <p className="pb-8 font-hand text-4xl text-[#EA9A4F]">Experience</p>
       {experience.map((job, i) => (
         <div
           key={i}
@@ -65,7 +65,9 @@ export const ExperienceDev = () => {
               | {job.role}
             </p>
             {/* JOB DESC */}
-            <p className="font-extralight opacity-70">{job.desc}</p>
+            <p className="font-geistmono mt-2 text-sm font-extralight opacity-70 ">
+              {job.desc}
+            </p>
             <ul className="mr-4 mt-1 flex w-full flex-wrap justify-end gap-2 pt-2 opacity-60 transition delay-150 duration-700 ease-in-out group-hover:opacity-100">
               {job.stacks.map((stack, i) => (
                 <li
@@ -79,6 +81,6 @@ export const ExperienceDev = () => {
           </div>
         </div>
       ))}
-    </>
+    </div>
   )
 }
