@@ -5,6 +5,7 @@ This is my personal full-stack portfolio built using modern web technologies lik
 ## Links
 
 [Freelancer Portfolio](https://imkunal.ca)
+
 [Developer Portfolio](https://imkunal.ca/dev)
 
 ## 🚀 Getting Started
