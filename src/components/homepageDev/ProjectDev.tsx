@@ -4,15 +4,22 @@ const projects = [
   {
     name: 'Tea Society',
     desc: 'A showcase website for one of the best clubs in Waterloo. Displaying its aesthetic in the purest possible form. ',
-    demo: 'link',
-    repo: 'link',
-    status: false
+    demo: 'https://tea.imkunal.ca/',
+    repo: 'https://github.com/kuki1029',
+    status: true
   },
   {
     name: 'Quantum Exhibit',
     desc: 'An elegant physics display of natural phenomenan to help people better understand the world around us. ',
     demo: 'https://physics.imkunal.ca/',
     repo: 'https://github.com/kuki1029/QuantumExhibit',
+    status: true
+  },
+  {
+    name: 'Chatique',
+    desc: 'A chatting app to learn websockets and real time communication. Stashed to focus on other projects but functional.',
+    demo: 'https://chat.imkunal.ca/',
+    repo: 'https://github.com/kuki1029/chatapp',
     status: true
   }
 ]

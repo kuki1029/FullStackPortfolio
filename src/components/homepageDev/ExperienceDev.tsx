@@ -5,11 +5,11 @@ const experience = [
     company: 'T6 Health Systems',
     link: 'https://t6.health/',
     stacks: ['react', 'typescript', 'jenkins', 'jira', 'vite', 'electron'],
-    desc: 'Developed a new application by modifying and reusing exisitng in-house architecture and react codebase. Worked with the complex codebase and also talked to stakeholders to understand requirements. Created new Jenkins pipelines.  '
+    desc: 'Revamped an internal React app using existing architecture; collaborated with stakeholders to gather requirements. Created new Jenkins pipelines and significantly improved performance by implementing infinite loading. '
   },
   {
     date: 'Jan, 2025 - May 2025',
-    role: 'Quantum Computer Undergraduate Researcher',
+    role: 'Research Assistant',
     company: 'Institute Of Quantum Computing',
     link: 'https://uwaterloo.ca/institute-for-quantum-computing/',
     stacks: ['python', 'deformable mirror', 'laser', 'thorlabs'],
@@ -28,7 +28,7 @@ const experience = [
       'cypress',
       'microservices'
     ],
-    desc: 'Heled develop a new application template to be used within the military and lead the digitizing effort among other military organizations. Implemented a live text editor through QuillJS and websockets. '
+    desc: 'Helped develop a reusable application template to be used within the military and lead the digitizing effort among other military organizations. Implemented a live text editor through QuillJS and websockets. '
   },
   {
     date: 'Jan, 2023 - May, 2023',
@@ -36,7 +36,7 @@ const experience = [
     company: 'Royal Canadian Air Force',
     link: 'https://www.theflightdeck.ca/',
     stacks: ['golang', 'goFiber', 'postgreSQL', 'postman'],
-    desc: 'Joined an existing complex project and helped develop + ship two features to users. Communicated with military members to understand requirements. First time building a website and had to learn Golang on the job. '
+    desc: 'Joined a complex existing project and shipped multiple user-facing features. Collaborated with military personnel to gather requirements. Quickly ramped up by learning Golang on the job to build my first production web app.'
   }
 ]
 
@@ -58,14 +58,14 @@ export const ExperienceDev = () => {
               <a
                 target="_blank"
                 rel="noreferrer"
-                className="opacity-70 text-xs underline underline-offset-4 hover:font-bold "
+                className="text-xs underline underline-offset-4 opacity-70 hover:font-bold "
                 href={job.link}
               >
                 {job.company}
               </a>{' '}
             </p>
             {/* JOB DESC */}
-            <p className="mt-2 font-geistmono text-sm font-extralight opacity-70 ">
+            <p className="text-md mt-2 font-geistmono font-extralight opacity-70 ">
               {job.desc}
             </p>
             <ul className="mr-4 mt-1 flex w-full flex-wrap justify-end gap-2 pt-2 opacity-60 transition delay-150 duration-700 ease-in-out group-hover:opacity-100">
