@@ -1,12 +1,15 @@
 # 🌐 Full-Stack Portfolio
 
+<img width="1920" height="1876" alt="image" src="https://github.com/user-attachments/assets/5d868b58-d202-4d56-835b-c401b9690462" />
+
+
 This is my personal full-stack portfolio built using modern web technologies like **Vite**, **React**, **Typescript**, and **Tailwind CSS**. It shows off my skills as a developer and links to my other projects.
 
 ## Links
 
-[Freelancer Portfolio](https://imkunal.ca)
+[Freelancer Portfolio](https://imkunal.ca/hireme)
 
-[Developer Portfolio](https://imkunal.ca/dev)
+[Developer Portfolio](https://imkunal.ca)
 
 ## 🚀 Getting Started
 
