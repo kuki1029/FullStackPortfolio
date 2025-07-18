@@ -2,10 +2,17 @@ import { ProjectButtons } from './ProjectButtons'
 
 const projects = [
   {
+    name: 'Agentic AI Physicists',
+    desc: 'Production ready agentic AI application allowing you to talk to old physicists. ',
+    demo: 'https://physicsai.imkunal.ca/',
+    repo: 'https://github.com/kuki1029/physicsAgents',
+    status: false
+  },
+  {
     name: 'Tea Society',
     desc: 'A showcase website for one of the best clubs in Waterloo. Displaying its aesthetic in the purest possible form. ',
     demo: 'https://tea.imkunal.ca/',
-    repo: 'https://github.com/kuki1029',
+    repo: 'https://github.com/kuki1029/TeaClubWebsite',
     status: true
   },
   {
