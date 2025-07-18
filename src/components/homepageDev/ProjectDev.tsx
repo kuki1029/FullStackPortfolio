@@ -2,7 +2,7 @@ import { ProjectButtons } from './ProjectButtons'
 
 const projects = [
   {
-    name: 'Agentic AI Physicists',
+    name: 'AI Physicists',
     desc: 'Production ready agentic AI application allowing you to talk to old physicists. ',
     demo: 'https://physicsai.imkunal.ca/',
     repo: 'https://github.com/kuki1029/physicsAgents',
