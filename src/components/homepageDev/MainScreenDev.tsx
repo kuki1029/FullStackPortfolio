@@ -18,10 +18,9 @@ export const MainScreenDev = () => {
       <div id="about" className="pt-24">
         <p className="pb-8 font-hand text-4xl text-[#EA9A4F]">About Me</p>
         <p className="w-3/4  font-geistmono text-[#D0D0D0] opacity-70">
-          a self taught full stack developer with a background in quantum
-          physics. I specialize in unique solutions to unique problems. My
-          speciality is my ability to work with no guidance or supervision but
-          still produce excellent and timely results.
+          a self taught software engineer with a background in quantum physics
+          and ML. I specialize in unique solutions to unique problems. Also, a
+          CS masters in progress!
         </p>
       </div>
       <ExperienceDev />

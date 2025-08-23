@@ -3,10 +3,10 @@ import { ProjectButtons } from './ProjectButtons'
 const projects = [
   {
     name: 'AI Physicists',
-    desc: 'Production ready agentic AI application allowing you to talk to old physicists. ',
-    demo: 'https://physicsai.imkunal.ca/',
+    desc: 'Production ready agentic AI application allowing you to talk to iconic physicists. With memory, RAG, and context retrieval.',
+    demo: 'https://physbot.imkunal.ca/',
     repo: 'https://github.com/kuki1029/physicsAgents',
-    status: false
+    status: true
   },
   {
     name: 'Tea Society',
@@ -20,13 +20,6 @@ const projects = [
     desc: 'An elegant physics display of natural phenomenan to help people better understand the world around us. ',
     demo: 'https://physics.imkunal.ca/',
     repo: 'https://github.com/kuki1029/QuantumExhibit',
-    status: true
-  },
-  {
-    name: 'Chatique',
-    desc: 'A chatting app to learn websockets and real time communication. Stashed to focus on other projects but functional.',
-    demo: 'https://chat.imkunal.ca/',
-    repo: 'https://github.com/kuki1029/chatapp',
     status: true
   }
 ]

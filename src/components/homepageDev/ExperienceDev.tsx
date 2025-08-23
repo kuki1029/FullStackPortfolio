@@ -1,11 +1,11 @@
 const experience = [
   {
     date: 'May, 2025 - Present',
-    role: 'React Developer',
+    role: 'Product Engineer',
     company: 'T6 Health Systems',
     link: 'https://t6.health/',
-    stacks: ['react', 'typescript', 'jenkins', 'jira', 'vite', 'electron'],
-    desc: 'Revamped an internal React app using existing architecture; collaborated with stakeholders to gather requirements. Created new Jenkins pipelines and significantly improved performance by implementing infinite loading. '
+    stacks: ['react', 'typescript', 'electron', 'HIPAA', 'nodeJS'],
+    desc: 'Architected systems for backend servers. Delivered 0-to-1 integration with undocumented legacy application. Optimized React app and reduced loading speeds form 30s to 1s. Regularly demoed to C-suite. Delivered E2E chatting application with group chats, location, and crucal patient info. '
   },
   {
     date: 'Jan, 2025 - May 2025',
@@ -65,7 +65,7 @@ export const ExperienceDev = () => {
               </a>{' '}
             </p>
             {/* JOB DESC */}
-            <p className="text-md mt-2 font-geistmono font-extralight opacity-70 ">
+            <p className="mt-2 font-geistmono font-extralight opacity-70 ">
               {job.desc}
             </p>
             <ul className="mr-4 mt-1 flex w-full flex-wrap justify-end gap-2 pt-2 opacity-60 transition delay-150 duration-700 ease-in-out group-hover:opacity-100">
