@@ -1,4 +1,4 @@
-import { useState } from 'react'
+import { useEffect, useRef, useState } from 'react'
 import type { ContributionData } from './commitTypes'
 import { normalizeCount, getBlackbodyColor, formatDate } from './commitUtils'
 
@@ -41,8 +41,32 @@ const getMonthLabels = (
 
 export const CommitGrid = ({ data }: Props) => {
   const [tooltip, setTooltip] = useState<Tooltip | null>(null)
+  const containerRef = useRef<HTMLDivElement>(null)
+  const [maxWeeks, setMaxWeeks] = useState(52)
 
-  const flatDays = data.weeks.flatMap((w) => w.days)
+  const cellSize = 12
+  const gap = 3
+  const step = cellSize + gap
+  const labelWidth = 32
+
+  // Measure container and compute how many weeks fit
+  useEffect(() => {
+    const measure = () => {
+      const container = containerRef.current
+      if (!container) return
+      const available = container.clientWidth - labelWidth - 8
+      const weeksThatFit = Math.max(4, Math.floor(available / step))
+      setMaxWeeks(Math.min(52, weeksThatFit))
+    }
+    measure()
+    const observer = new ResizeObserver(measure)
+    if (containerRef.current) observer.observe(containerRef.current)
+    return () => observer.disconnect()
+  }, [step])
+
+  // Slice to the most recent N weeks
+  const visibleWeeks = data.weeks.slice(-maxWeeks)
+  const flatDays = visibleWeeks.flatMap((w) => w.days)
 
   // Pad the first week so Sunday starts at row 0
   const firstDayOfWeek = new Date(flatDays[0]?.date + 'T00:00:00').getDay()
@@ -57,11 +81,7 @@ export const CommitGrid = ({ data }: Props) => {
     columns.push(paddedDays.slice(i, i + 7))
   }
 
-  const monthLabels = getMonthLabels(data.weeks)
-  const cellSize = 12
-  const gap = 3
-  const step = cellSize + gap
-  const labelWidth = 32
+  const monthLabels = getMonthLabels(visibleWeeks)
 
   const handleMouseEnter = (
     day: { date: string; count: number },
@@ -77,8 +97,8 @@ export const CommitGrid = ({ data }: Props) => {
   }
 
   return (
-    <div className="relative">
-      <div className="overflow-x-auto pb-2">
+    <div ref={containerRef} className="relative">
+      <div className="pb-2">
         {/* Month labels */}
         <div className="flex" style={{ paddingLeft: labelWidth }}>
           {monthLabels.map(({ label, colIndex }) => (
@@ -179,8 +199,6 @@ export const CommitGrid = ({ data }: Props) => {
         </div>
       )}
 
-      {/* Right fade for mobile scroll hint */}
-      <div className="pointer-events-none absolute right-0 top-0 h-full w-8 bg-gradient-to-l from-[#171717] to-transparent sm:hidden" />
     </div>
   )
 }
