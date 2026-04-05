@@ -1,11 +1,19 @@
 const experience = [
   {
-    date: 'May, 2025 - Present',
+    date: 'Jan, 2026 - Present',
+    role: 'Member of Technical Staff',
+    company: 'Ergo',
+    link: 'https://www.ergo.chat/',
+    stacks: ['typescript', 'python', 'node', 'agentic infra'],
+    desc: 'Built our own internal agent framework to solve the shortcomings of current agent frameworks. Built email drafting with agents from the ground up to sound more like users in tone in every context or situation. '
+  },
+  {
+    date: 'May, 2025 - Dec, 2025',
     role: 'Product Engineer',
     company: 'T6 Health Systems',
     link: 'https://t6.health/',
     stacks: ['react', 'typescript', 'electron', 'HIPAA', 'nodeJS'],
-    desc: 'Architected systems for backend servers. Delivered 0-to-1 integration with undocumented legacy application. Optimized React app and reduced loading speeds form 30s to 1s. Regularly demoed to C-suite. Delivered E2E chatting application with group chats, location, and crucal patient info. '
+    desc: 'Delivered 0-to-1 integration with undocumented legacy application. Optimized React app and reduced loading speeds from 30s to 1s. Regularly demoed to C-suite. Delivered E2E chatting application with group chats, location, and crucial patient info. '
   },
   {
     date: 'Jan, 2025 - May 2025',

@@ -8,6 +8,10 @@ const navLinks = [
     link: 'https://www.linkedin.com/in/kunal-varkekar/'
   },
   {
+    name: 'Twitter',
+    link: 'https://x.com/kuki1243'
+  },
+  {
     name: 'Email',
     link: 'mailto:pvarkeka@uwaterloo.ca'
   }

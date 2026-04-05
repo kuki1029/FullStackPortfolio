@@ -1,7 +1,7 @@
 import { AnimatePresence, motion } from 'framer-motion'
 import { useEffect, useState } from 'react'
 
-const phrases = ['Full-stack Dev', 'Chef', 'AI Solutions Engineer', 'Physicist']
+const phrases = ['Physicist', 'Chef', 'Engineer']
 
 export const FlipText = () => {
   const [index, setIndex] = useState(0)
