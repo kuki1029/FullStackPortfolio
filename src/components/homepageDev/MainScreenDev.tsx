@@ -1,7 +1,9 @@
+import { CommitsDev } from './CommitsDev'
 import { ExperienceDev } from './ExperienceDev'
 import { FlipText } from './FlipText'
 import { NavDev } from './NavDev'
 import { ProjectDev } from './ProjectDev'
+import { StatsDev } from './StatsDev'
 
 export const MainScreenDev = () => {
   return (
@@ -14,8 +16,9 @@ export const MainScreenDev = () => {
         </div>
         <NavDev />
       </div>
+      <StatsDev />
       {/* About ME */}
-      <div id="about" className="pt-24">
+      <div id="about" className="pt-12">
         <p className="pb-8 font-hand text-4xl text-[#EA9A4F]">About Me</p>
         <p className="w-3/4  font-geistmono text-[#D0D0D0] opacity-70">
           a self taught software engineer with a background in quantum physics
@@ -25,6 +28,7 @@ export const MainScreenDev = () => {
       </div>
       <ExperienceDev />
       <ProjectDev />
+      <CommitsDev />
     </div>
   )
 }

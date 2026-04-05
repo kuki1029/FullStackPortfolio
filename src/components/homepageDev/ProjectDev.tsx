@@ -2,8 +2,15 @@ import { ProjectButtons } from './ProjectButtons'
 
 const projects = [
   {
+    name: 'Tom',
+    desc: 'Multi-agent coding harness for Claude Code. Discovery, Plan, Build, Evaluate, Review.',
+    demo: '',
+    repo: 'https://github.com/kuki1029/tom',
+    status: true
+  },
+  {
     name: 'AI Physicists',
-    desc: 'Production ready agentic AI application allowing you to talk to iconic physicists. With memory, RAG, and context retrieval.',
+    desc: 'My first attempt at building an AI agent in the cloud. Makes use of RAG, and has memory.',
     demo: 'https://physbot.imkunal.ca/',
     repo: 'https://github.com/kuki1029/physicsAgents',
     status: true
@@ -20,6 +27,20 @@ const projects = [
     desc: 'An elegant physics display of natural phenomenan to help people better understand the world around us. ',
     demo: 'https://physics.imkunal.ca/',
     repo: 'https://github.com/kuki1029/QuantumExhibit',
+    status: true
+  },
+  {
+    name: 'Rubiks Cube',
+    desc: 'A fully interactive Rubiks cube simulation built in Java using the Processing library.',
+    demo: '',
+    repo: 'https://github.com/kuki1029/Rubiks-Cube',
+    status: true
+  },
+  {
+    name: 'TODO App',
+    desc: 'A full stack todo application built with Golang as the primary framework. This is here because it was my first attempt at building a web app and started my journey into becoming an engineer. This project, albeit simple, is my most valuable one.',
+    demo: '',
+    repo: 'https://github.com/kuki1029/TODO_App',
     status: true
   }
 ]

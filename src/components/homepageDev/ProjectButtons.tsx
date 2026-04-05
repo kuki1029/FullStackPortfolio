@@ -7,29 +7,31 @@ export const ProjectButtons = ({
 }) => {
   return (
     <div className="mr-4 flex items-center gap-2 opacity-70 group-hover:opacity-100">
-      <a
-        href={demo}
-        target="_blank"
-        rel="noopener noreferrer"
-        className="flex items-center gap-1"
-      >
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          width="20"
-          height="20"
-          fill="currentColor"
-          viewBox="0 0 256 256"
+      {demo && (
+        <a
+          href={demo}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="flex items-center gap-1"
         >
-          <path
-            d="M224,64v88H32V64A16,16,0,0,1,48,48H208A16,16,0,0,1,224,64Z"
-            opacity="0.2"
-          ></path>
-          <path d="M208,40H48A24,24,0,0,0,24,64V176a24,24,0,0,0,24,24h72v16H96a8,8,0,0,0,0,16h64a8,8,0,0,0,0-16H136V200h72a24,24,0,0,0,24-24V64A24,24,0,0,0,208,40ZM48,56H208a8,8,0,0,1,8,8v80H40V64A8,8,0,0,1,48,56ZM208,184H48a8,8,0,0,1-8-8V160H216v16A8,8,0,0,1,208,184Z"></path>
-        </svg>
-        <span className="w-0 overflow-hidden transition-[width] duration-500 ease-in-out hover:underline group-hover:w-10">
-          demo
-        </span>
-      </a>
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="20"
+            height="20"
+            fill="currentColor"
+            viewBox="0 0 256 256"
+          >
+            <path
+              d="M224,64v88H32V64A16,16,0,0,1,48,48H208A16,16,0,0,1,224,64Z"
+              opacity="0.2"
+            ></path>
+            <path d="M208,40H48A24,24,0,0,0,24,64V176a24,24,0,0,0,24,24h72v16H96a8,8,0,0,0,0,16h64a8,8,0,0,0,0-16H136V200h72a24,24,0,0,0,24-24V64A24,24,0,0,0,208,40ZM48,56H208a8,8,0,0,1,8,8v80H40V64A8,8,0,0,1,48,56ZM208,184H48a8,8,0,0,1-8-8V160H216v16A8,8,0,0,1,208,184Z"></path>
+          </svg>
+          <span className="w-0 overflow-hidden transition-[width] duration-500 ease-in-out hover:underline group-hover:w-10">
+            demo
+          </span>
+        </a>
+      )}
       <a
         href={repo}
         target="_blank"
